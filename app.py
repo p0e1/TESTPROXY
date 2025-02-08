@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # Get the Gemini API key from environment variables
-GEMINI_API_KEY = os.environ.get("AIzaSyBBUOYsX2pxDJL33923sMtM4xA1QL4PTtY")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY environment variable not set.")
 
